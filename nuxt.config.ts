@@ -1,8 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt',
-        '@vueuse/nuxt'
+        '@vueuse/nuxt',
     ],
     app: {
         head: {
@@ -30,7 +29,7 @@ export default defineNuxtConfig({
             preprocessorOptions: {
                 scss: {
                     additionalData:
-                        '@import "@/assets/scss/_variables.scss"; @import "@/assets/scss/_mixins.scss";',
+                        '@import "@/assets/scss/_variables.scss"; @import "@/assets/scss/_mixins.scss";  @import "@/assets/scss/_fonts.scss";',
                 },
             },
         },

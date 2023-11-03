@@ -1,9 +1,9 @@
-<script lang="ts" setup></script>
-
 <template lang="pug">
-div Layout: default
-  slot
+.main-layout
+  common-header
+    slot
 </template>
-
+<script lang="ts" setup>
+</script>
 <style scoped lang="scss">
 </style>
