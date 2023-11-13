@@ -13,7 +13,7 @@ interface Props {
 }
 const props = withDefaults(defineProps<Props>(), {
   outline: false,
-  disabled: false,
+  disabled: false
 });
 interface Emits {
   (e: "on-click"): void;
@@ -28,13 +28,12 @@ const clickHandler = (): void => {
 </script>
 <style scoped lang="scss">
 .btn {
-  width: 100%;
   height: 50px;
   display: inline-flex;
   justify-content: center;
-  padding: 10px 24px;
+  padding: 17px 33px;
   border-radius: 50px;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   cursor: pointer;
   background-color: $primary;
   border: 1px solid $primary;
@@ -47,13 +46,13 @@ const clickHandler = (): void => {
   align-items: center;
 
   &:hover {
-    background-color: #4d48e9;
-    border-color: #4d48e9;
+    background-color: #005EE0;
+    border-color: #005EE0;
     color: $white;
   }
   &:active {
-    background-color: #3d39c9;
-    border-color: #3d39c9;
+    background-color: #0046C3;
+    border-color: #0046C3;
   }
 
   &--outline {
@@ -61,20 +60,20 @@ const clickHandler = (): void => {
     color: $primary;
     border: 1px solid $primary;
     &:before {
-      transition: all 0.3s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     &:hover {
-      background-color: #4d48e9;
-      border-color: #4d48e9;
+      background-color: #005EE0;
+      border-color: #005EE0;
       color: $white;
       &:before {
         background-color: $white;
       }
     }
     &:active {
-      background-color: #002cbb;
-      border-color: #002cbb;
+      background-color: #0046C3;
+      border-color: #0046C3;
     }
     &.btn--disabled {
       color: #c2c0f8;

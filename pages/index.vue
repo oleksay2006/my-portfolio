@@ -1,5 +1,8 @@
 <template lang="pug">
-div DayJs: {{$dayjs().format('DD/MM/YYYY')}}
+.wrapper
+  first-section
+  skills-banner
+  second-section
 </template>
 <script lang="ts" setup>
 </script>

@@ -9,7 +9,7 @@ export const useUserStore = defineStore(
     const refreshToken = ref();
     const rememberMe = ref(false);
 
-    function setTokens(payload: {
+    function setTokens (payload: {
       accessToken: string;
       refreshToken: string;
       rememberMe?: boolean;
@@ -21,7 +21,7 @@ export const useUserStore = defineStore(
       }
     }
 
-    function clear() {
+    function clear () {
       data.value = {};
       accessToken.value = "";
       refreshToken.value = "";
@@ -29,5 +29,5 @@ export const useUserStore = defineStore(
     }
 
     return { data, accessToken, refreshToken, rememberMe, setTokens, clear };
-  },
+  }
 );

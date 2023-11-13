@@ -2,7 +2,12 @@
 @import "reset";
 @import "mixins";
 @import "variables";
-@import "fonts";
+@import "typography";
+
+* {
+  font-family: "Work Sans", sans-serif;
+  color: $text-color;
+}
 
 body {
   &.no-scroll {
