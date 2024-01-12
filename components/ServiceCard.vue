@@ -33,13 +33,6 @@ withDefaults(defineProps<Props>(), {
     transition: all .2s ease-in-out;
     color: #333;
   }
-  &__icon {
-    transition: all .2s ease-in-out;
-    &--frontend {
-      @extend .card__icon;
-      @include icon-mask("window", 100px, 100px, $primary);
-    }
-  }
   &__wrapper {
     width: 25%;
     padding: 30px;
