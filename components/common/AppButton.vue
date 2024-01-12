@@ -1,6 +1,6 @@
 <template lang="pug">
 button.btn(
-  :class="{ 'btn--outline': outline, 'btn--disabled': disabled }",
+  :class="{ 'btn--outline': outline, 'btn--disabled': disabled, 'btn--download': download }",
   type="button",
   @click="clickHandler"
 )
@@ -9,10 +9,12 @@ button.btn(
 <script lang="ts" setup>
 interface Props {
   outline?: boolean;
+  download?: boolean;
   disabled?: boolean;
 }
 const props = withDefaults(defineProps<Props>(), {
   outline: false,
+  download: false,
   disabled: false
 });
 interface Emits {
@@ -33,7 +35,7 @@ const clickHandler = (): void => {
   justify-content: center;
   padding: 17px 33px;
   border-radius: 50px;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   background-color: $primary;
   border: 1px solid $primary;
@@ -55,6 +57,14 @@ const clickHandler = (): void => {
     border-color: #0046C3;
   }
 
+  &--download {
+    &:after {
+      content: "";
+      @include icon-mask("download", 20px, 20px, $primary);
+      margin-left: 15px;
+    }
+  }
+
   &--outline {
     background-color: transparent;
     color: $primary;
@@ -68,6 +78,9 @@ const clickHandler = (): void => {
       border-color: #005EE0;
       color: $white;
       &:before {
+        background-color: $white;
+      }
+      &:after {
         background-color: $white;
       }
     }
@@ -88,14 +101,14 @@ const clickHandler = (): void => {
 
   &--disabled {
     cursor: not-allowed;
-    background-color: #8580ff;
-    border-color: #8580ff;
-    color: #d8d6fd;
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary;
     &:hover,
     &:active {
-      color: #d8d6fd;
-      border-color: #8580ff;
-      background-color: #8580ff;
+      color: $white;
+      border-color: #AEBFC5;
+      background-color: #AEBFC5;
     }
   }
 }

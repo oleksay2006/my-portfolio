@@ -1,6 +1,6 @@
 <template lang="pug">
 .skills-banner
-  a(v-for="item in Banner.imagesList", :href="item.redirectUrl")
+  a(v-for="item in Banner.imagesList", :key="item.imageName", :href="item.redirectUrl")
     img.skills-banner__image(
       :src="getImageSrc(item.imageName)",
       alt="Nodejs logo"
@@ -49,6 +49,25 @@ class Banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1150px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
+    height: auto;
+  }
+  @media (max-width: 880px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 470px) {
+    padding: 50px 30px;
+  }
+  @media (max-width: 440px) {
+    gap: 50px;
+  }
   &__image {
     height: 50px;
   }

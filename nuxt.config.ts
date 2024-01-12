@@ -27,7 +27,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
-      BASE_URL: process.env.BASE_URL
+      BASE_URL: process.env.BASE_URL,
+      EMAILJS: process.env.EMAILJS
     }
   },
   css: ["@/assets/scss/styles.scss"],
