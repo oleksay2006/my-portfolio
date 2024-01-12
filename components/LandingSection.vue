@@ -2,11 +2,11 @@
 .section__wrapper
   .section__text-block
     p.text-block__subtitle Welcome to my Portfolio
-    p.app-h1 Hi I’m
+    p.app-h1 Hi, I’m
     p.text-block__blue-title Oleksii Yatsentiuk
     p.app-h1 Full Stack Developer
-    p.text-block__regular Collaborating with highly skilled individuals,
-    p.text-block__regular our agency delivers top-quality services.
+    p.text-block__regular Full-stack solutions, pixel-perfect results
+    p.text-block__regular Building beautiful websites, powered by invisible magic
     .section__buttons
       common-app-button.section__buttons-first(@on-click="redirectToTelegram") Get in touch
       common-app-button(:outline="true", :download="true", @on-click="downloadPdf('/mycv.pdf')") Download CV

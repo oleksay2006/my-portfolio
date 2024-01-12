@@ -3,6 +3,7 @@ node_modules
 /dist
 coverage
 .yarn
+.nuxt
 
 # local env files
 .env.local
