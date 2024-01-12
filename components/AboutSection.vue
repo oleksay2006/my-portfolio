@@ -1,8 +1,8 @@
 <template lang="pug">
 .section__wrapper
-  img.section__background(src="@/assets/icons/second-page-bg.svg")
+  nuxt-img.section__background(preload, src="second-page-bg.svg", alt="Section background")
   .section__image-wrapper
-    img.section__image(src="@/assets/images/my-photo-2.jpg", alt="My photo")
+    nuxt-img.section__image(preload, format="webp", src="my-photo-2.jpg", alt="My photo")
   .section__text-block
     p.text-block__subtitle About Me
     p.text-block__blue-title 1 Year of Experience
@@ -188,6 +188,7 @@ const changeActiveTab = (index: number) => {
     z-index: -1;
     left: 0;
     bottom: -10%;
+    width: 600px;
     @media (max-width: 1550px) {
       width: 550px;
     }

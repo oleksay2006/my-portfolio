@@ -11,7 +11,7 @@
       common-app-button.section__buttons-first(@on-click="redirectToTelegram") Get in touch
       common-app-button(:outline="true", :download="true", @on-click="downloadPdf('/mycv.pdf')") Download CV
   .section__image-wrapper
-    img.section__image(src="@/assets/images/my-photo.jpg", alt="My photo")
+    nuxt-img.section__image(preload, format="webp", src="my-photo.jpg", alt="My photo")
 </template>
 <script lang="ts" setup>
 import useDownloadPdf from "@/composables/useDownloadPdf";

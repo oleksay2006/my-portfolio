@@ -23,5 +23,5 @@ export { computedAsync, asyncComputed, computedEager, eagerComputed, computedInj
 export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerSeoMeta, useServerHeadSafe } from '@unhead/vue';
 export { default as useDownloadPdf } from '../composables/useDownloadPdf';
 export { useImages } from '../composables/useImages';
-export { usePinia, defineStore, acceptHMRUpdate } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
+export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';

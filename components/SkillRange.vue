@@ -1,7 +1,7 @@
 <template lang="pug">
 .skill-range
-  p.skill-range__title {{ title }}
-  input.skill-range__input(type="range", disabled, min="0", max="100", :value="percentage")
+  label.skill-range__title {{ title }}
+    input.skill-range__input(type="range", disabled, min="0", max="100", :value="percentage")
 </template>
 <script lang="ts" setup>
 interface Props {

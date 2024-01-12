@@ -1,18 +1,18 @@
 <template lang="pug">
 footer.footer__wrapper
   .footer__copyright-wrapper
-    img.footer__logo(src="@/assets/icons/my-logo-white.svg")
+    img.footer__logo(src="@/assets/icons/my-logo-white.svg", alt="My logo")
     p.footer__copyright © Copyright 2024. All Rights Reserved.
   .follow-section
     p.follow-section__text FOLLOW ME:
-    a.follow-section__icon-link(href="https://t.me/blood1shot" target="_blank")
-      img.follow-section__icon(src="@/assets/icons/telegram.svg")
-    a.follow-section__icon-link(href="mailto:oleksii.yatsentiuk@proton.me" target="_blank")
-      img.follow-section__icon(src="@/assets/icons/email.svg")
-    a.follow-section__icon-link(href="https://github.com/oleksay2006" target="_blank")
-      img.follow-section__icon(src="@/assets/icons/github.svg")
-    a.follow-section__icon-link(href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%8F%D1%86%D0%B5%D0%BD%D1%82%D1%8E%D0%BA-a5253b292/" target="_blank")
-      img.follow-section__icon(src="@/assets/icons/linkedin.svg")
+    a.follow-section__icon-link(href="https://t.me/blood1shot", target="_blank", aria-label="Text me in Telegram")
+      img.follow-section__icon(src="@/assets/icons/telegram.svg", alt="Telegram icon")
+    a.follow-section__icon-link(href="mailto:oleksii.yatsentiuk@proton.me", target="_blank", aria-label="Email me")
+      img.follow-section__icon(src="@/assets/icons/email.svg", alt="Email icon")
+    a.follow-section__icon-link(href="https://github.com/oleksay2006", target="_blank", aria-label="My Github profile")
+      img.follow-section__icon(src="@/assets/icons/github.svg", alt="Github icon")
+    a.follow-section__icon-link(href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D1%8F%D1%86%D0%B5%D0%BD%D1%82%D1%8E%D0%BA-a5253b292/", target="_blank", aria-label="My LinkedIn profile")
+      img.follow-section__icon(src="@/assets/icons/linkedin.svg", alt="LinkedIn icon")
 </template>
 <script lang="ts" setup></script>
 <style lang="scss" scoped>

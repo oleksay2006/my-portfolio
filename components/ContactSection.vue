@@ -1,7 +1,7 @@
 <template lang="pug">
 .section__wrapper
-  img.section__bg-icon--small(src="@/assets/icons/small-circle.svg")
-  img.section__bg-icon--large(src="@/assets/icons/large-circle.svg")
+  nuxt-img.section__bg-icon--small(src="small-circle.svg", alt="Small circle")
+  nuxt-img.section__bg-icon--large(src="large-circle.svg", alt="Large circle")
   p.section__subtitle Contact me
   p.section__title Request Free Consultancy
   .contacts__wrapper
@@ -206,6 +206,7 @@ const buttonDisabled = computed<boolean>(() => {
 .section {
   &__bg-icon {
     &--large {
+      width: 530px;
       z-index: -1;
       position: absolute;
       right: 0;
@@ -223,9 +224,10 @@ const buttonDisabled = computed<boolean>(() => {
       }
     }
     &--small {
+      width: 250px;
       position: absolute;
       left: 0;
-      top: 60%;
+      top: 50%;
       z-index: -1;
     }
   }

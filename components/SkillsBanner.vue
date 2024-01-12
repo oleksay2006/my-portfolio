@@ -1,41 +1,43 @@
 <template lang="pug">
 .skills-banner
-  a(v-for="item in Banner.imagesList", :key="item.imageName", :href="item.redirectUrl")
+  a(v-for="item in Banner.imagesList", :key="item.imageUrl", :href="item.redirectUrl", target="_blank")
     img.skills-banner__image(
-      :src="getImageSrc(item.imageName)",
-      alt="Nodejs logo"
+      :src="item.imageUrl",
+      :alt="item.altText"
     )
 </template>
 <script lang="ts" setup>
-import { useImages } from "@/composables/useImages";
-
-const { getImageSrc } = useImages();
-
 class Banner {
   static imagesList = [
     {
-      imageName: "nodejs-logo",
-      redirectUrl: "https://nodejs.org/en"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/hfbgw6hjbb2oze0mkg5c",
+      redirectUrl: "https://nodejs.org/en",
+      altText: "NodeJs logo"
     },
     {
-      imageName: "nuxtjs-logo",
-      redirectUrl: "https://nuxt.com/"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/z6kqbmm5ipwkuvoagqvl",
+      redirectUrl: "https://nuxt.com/",
+      altText: "NuxtJs logo"
     },
     {
-      imageName: "nestjs-logo",
-      redirectUrl: "https://nestjs.com/"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/amh7uoe4cs1abggwe8r7",
+      redirectUrl: "https://nestjs.com/",
+      altText: "NestJs logo"
     },
     {
-      imageName: "google-logo",
-      redirectUrl: "https://cloud.google.com/?hl=uk"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/r1gjtgjf9nmw7cahyeoa",
+      redirectUrl: "https://cloud.google.com/?hl=uk",
+      altText: "GoogleCloud logo"
     },
     {
-      imageName: "vuejs-logo",
-      redirectUrl: "https://vuejs.org/"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/tloiorh6jqsiafcdaipf",
+      redirectUrl: "https://vuejs.org/",
+      altText: "VueJs logo"
     },
     {
-      imageName: "astrojs-logo",
-      redirectUrl: "https://astro.build/"
+      imageUrl: "https://res.cloudinary.com/drlr8epdj/image/upload/f_auto,q_auto/v1/portfolio/klqrjd9mffhdaucy4zqp",
+      redirectUrl: "https://astro.build/",
+      altText: "AstroJs logo"
     }
   ];
 }

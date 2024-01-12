@@ -1,8 +1,9 @@
 import eslintVitePlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
+  devtools: { enabled: true },
   modules: [
-    "@pinia/nuxt",
+    "@nuxt/image",
     "@vueuse/nuxt",
     ["@nuxtjs/google-fonts", {
       families: {
@@ -10,26 +11,15 @@ export default defineNuxtConfig({
       }
     }]
   ],
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: "en"
-      },
-      charset: "utf-8"
-    }
-  },
-  imports: {
-    dirs: ["./stores"]
-  },
-  pinia: {
-    autoImports: ["defineStore", "acceptHMRUpdate"]
-  },
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
       BASE_URL: process.env.BASE_URL,
       EMAILJS: process.env.EMAILJS
     }
+  },
+  webpack: {
+    optimizeCSS: true
   },
   css: ["@/assets/scss/styles.scss"],
   vite: {

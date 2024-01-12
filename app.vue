@@ -32,5 +32,19 @@ const scrollTo = (element: string) => {
     break;
   }
 };
+
+useHead({
+  title: "My portfolio",
+  htmlAttrs: {
+    lang: "en"
+  }
+});
+useSeoMeta({
+  title: "My portfolio",
+  ogTitle: "My portfolio",
+  description: "Building beautiful and functional websites that bring your vision to life. See my portfolio for creative solutions and seamless user experiences",
+  ogDescription: "Building beautiful and functional websites that bring your vision to life. See my portfolio for creative solutions and seamless user experiences",
+  ogImage: "thumbnail.webp"
+});
 </script>
 <style scoped lang="scss"></style>
