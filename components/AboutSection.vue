@@ -1,5 +1,5 @@
 <template lang="pug">
-.section__wrapper
+section.section__wrapper
   nuxt-img.section__background(preload, src="second-page-bg.svg", alt="Section background")
   .section__image-wrapper
     nuxt-img.section__image(preload, format="webp", src="my-photo-2.jpg", alt="My photo")

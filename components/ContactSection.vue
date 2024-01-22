@@ -1,5 +1,5 @@
 <template lang="pug">
-.section__wrapper
+section.section__wrapper
   nuxt-img.section__bg-icon--small(src="small-circle.svg", alt="Small circle")
   nuxt-img.section__bg-icon--large(src="large-circle.svg", alt="Large circle")
   p.section__subtitle Contact me

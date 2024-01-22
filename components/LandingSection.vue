@@ -1,5 +1,5 @@
 <template lang="pug">
-.section__wrapper
+section.section__wrapper
   .section__text-block
     p.text-block__subtitle Welcome to my Portfolio
     p.app-h1 Hi, I’m

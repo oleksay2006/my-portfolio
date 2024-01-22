@@ -1,5 +1,5 @@
 <template lang="pug">
-.section__wrapper
+section.section__wrapper
   p.section__subtitle Services
   p.section__title Exploring my Full-Stack <span class="section__title--blue">Skills</span>
   p.section__description I wear two hats, crafting beautiful front-ends with Vue.js and the logic to power them. Seamless experiences are my passion, from pixel-perfect design to flawless functionality

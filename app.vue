@@ -8,7 +8,7 @@
       about-section(ref="about")
       services-section(ref="services")
       contact-section(ref="contactForm")
-      common-app-footer
+  common-app-footer
 </template>
 <script lang="ts" setup>
 const landing = ref<HTMLElement | null>(null);
