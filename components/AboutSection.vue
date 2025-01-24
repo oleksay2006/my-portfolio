@@ -5,7 +5,7 @@ section.section__wrapper
     nuxt-img.section__image(preload, format="webp", src="my-photo-2.jpg", alt="My photo")
   .section__text-block
     p.text-block__subtitle About Me
-    p.text-block__blue-title 1 Year of Experience
+    p.text-block__blue-title 2 Year of Experience
     p.app-h2 In Front-End Development
     .text-block__regular-wrapper
       p.text-block__regular Hello there! I'm <span class="text-block__bold">Oleksii Yatsentiuk</span>, tech enthusiast, racing fanatic, and Vue.js developer
@@ -17,9 +17,9 @@ section.section__wrapper
       common-app-button(:outline="activeIndex !== 2", @on-click="changeActiveTab(2)") Education
     .section__tabs-contents
       .first-tab(v-if="activeIndex === 0")
-        skill-range(title="JavaScript", :percentage="65")
-        skill-range(title="Vue.js", :percentage="65")
-        skill-range(title="Nuxt.js", :percentage="55")
+        skill-range(title="JavaScript", :percentage="85")
+        skill-range(title="Vue.js", :percentage="85")
+        skill-range(title="Nuxt.js", :percentage="60")
         skill-range(title="Node.js", :percentage="50")
       .tab(v-if="activeIndex === 1")
         .tab__period
