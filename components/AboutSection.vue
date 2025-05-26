@@ -5,7 +5,7 @@ section.section__wrapper
     nuxt-img.section__image(preload, format="webp", src="my-photo-2.jpg", alt="My photo")
   .section__text-block
     p.text-block__subtitle About Me
-    p.text-block__blue-title 2 Year of Experience
+    p.text-block__blue-title 2.5 Year of Experience
     p.app-h2 In Front-End Development
     .text-block__regular-wrapper
       p.text-block__regular Hello there! I'm <span class="text-block__bold">Oleksii Yatsentiuk</span>, tech enthusiast, racing fanatic, and Vue.js developer
@@ -18,7 +18,7 @@ section.section__wrapper
     .section__tabs-contents
       .first-tab(v-if="activeIndex === 0")
         skill-range(title="JavaScript", :percentage="85")
-        skill-range(title="Vue.js", :percentage="85")
+        skill-range(title="Vue.js", :percentage="90")
         skill-range(title="Nuxt.js", :percentage="60")
         skill-range(title="Node.js", :percentage="50")
       .tab(v-if="activeIndex === 1")
@@ -44,12 +44,15 @@ section.section__wrapper
           p.tab__text-title Volodymyr Vynnychenko Central Ukrainian State University
           p.tab__text Bachelor, Computer Science, 2023-2027
 </template>
+
 <script lang="ts" setup>
 const activeIndex = ref<number>(0);
+
 const changeActiveTab = (index: number) => {
   activeIndex.value = index;
 };
 </script>
+
 <style scoped lang="scss">
 .tab {
   padding-left: 50px;
@@ -61,13 +64,16 @@ const changeActiveTab = (index: number) => {
     background: $gray;
     top: 0; bottom: 0; left: 15px;
   }
+
   @media (max-width: 440px) {
     padding-left: 10px;
   }
+
   &__date {
     position: absolute;
     top: 19px;
     left: -160px;
+
     @media (max-width: 1065px) {
       top: -5px;
       left: -20px;
@@ -80,6 +86,7 @@ const changeActiveTab = (index: number) => {
       left: 33%;
     }
   }
+
   &__link {
     color: $primary;
     display: flex;
@@ -89,6 +96,7 @@ const changeActiveTab = (index: number) => {
       @include icon-mask("external-link", 15px, 15px, $primary);
       margin-left: 5px;
     }
+
     @media (max-width: 1065px) {
       margin-left: auto;
       margin-right: auto;
@@ -97,6 +105,7 @@ const changeActiveTab = (index: number) => {
       width: 50%;
     }
   }
+
   &__period {
     position: relative;
     padding: 0 0 20px 15px;
@@ -110,6 +119,7 @@ const changeActiveTab = (index: number) => {
       background: $primary;
       top: 20%; left: -43.8px;
       position: absolute;
+
       @media (max-width: 440px) {
         left: -3.5px;
       }
@@ -117,23 +127,27 @@ const changeActiveTab = (index: number) => {
     &:before {
       position: absolute;
     }
+
     @media (max-width: 440px) {
       padding-left: 0;
       margin-bottom: 30px;
     }
   }
+
   &__text {
     @media (max-width: 440px) {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
     }
+
     &-wrapper {
       margin-bottom: 15px;
     }
     &-title {
       @extend .app-h3;
       margin-bottom: 10px;
+
       @media (max-width: 440px) {
         width: 80%;
         margin-left: auto;
@@ -146,6 +160,7 @@ const changeActiveTab = (index: number) => {
   &__bold {
     font-weight: 700;
   }
+
   &__regular {
     @extend .app-body-1;
     margin-bottom: 5px;
@@ -154,11 +169,13 @@ const changeActiveTab = (index: number) => {
       margin-bottom: 50px;
     }
   }
+
   &__blue-title {
     @extend .app-h2;
     color: $primary;
     margin-bottom: 7px;
   }
+
   &__subtitle {
     color: $primary;
     font-size: 20px;
@@ -189,6 +206,7 @@ const changeActiveTab = (index: number) => {
     left: 0;
     bottom: -10%;
     width: 600px;
+
     @media (max-width: 1550px) {
       width: 550px;
     }
@@ -199,14 +217,17 @@ const changeActiveTab = (index: number) => {
   &__tabs {
     display: flex;
     margin-bottom: 45px;
+
     @media (max-width: 1065px) {
       justify-content: center;
     }
     @media (max-width: 550px) {
       flex-direction: column;
     }
+
     &-button {
       margin-right: 25px;
+
       @media (max-width: 550px) {
         margin: 0 0 15px;
       }
@@ -223,6 +244,7 @@ const changeActiveTab = (index: number) => {
     align-items: center;
     position: relative;
     overflow: hidden;
+
     @media (max-width: 1065px) {
       flex-direction: column;
       text-align: center;
@@ -241,6 +263,7 @@ const changeActiveTab = (index: number) => {
       height: 623px;
       width: 620px;
       overflow: hidden;
+
       @media (max-width: 1550px) {
         height: 453px;
         width: 450px;

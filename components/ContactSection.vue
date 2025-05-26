@@ -8,7 +8,7 @@ section.section__wrapper
     .contacts
       .contacts__first-block
         .contacts__subtitle My phone number
-        .contacts__title (+38) 066 501 0699
+        .contacts__title (+38) 066 501 0599
       .contacts__second-block
         p.contacts__text <span class="contacts__text--bold">Email:</span> oleksii.yatsentiuk@proton.me
         p.contacts__text <span class="contacts__text--bold">Work Hour:</span> Mon - Sat: 10:00 - 19:00
