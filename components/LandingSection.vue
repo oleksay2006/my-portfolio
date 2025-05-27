@@ -9,7 +9,7 @@ section.section__wrapper
     p.text-block__regular Building beautiful websites, powered by invisible magic
     .section__buttons
       common-app-button.section__buttons-first(@on-click="redirectToTelegram") Get in touch
-      common-app-button(:outline="true", :download="true", @on-click="downloadPdf('/mycv.pdf')") Download CV
+      common-app-button(:outline="true", :download="true", @on-click="downloadPdf('/oleksii-yatsentiuk_cv.pdf')") Download CV
   .section__image-wrapper
     nuxt-img.section__image(preload, format="webp", src="my-photo.jpg", alt="My photo")
 </template>
